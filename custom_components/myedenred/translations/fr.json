@@ -1,0 +1,28 @@
+{
+    "title": "Intégration carte déjeuner MyEdenred",
+    "config": {
+        "step": {
+            "user": {
+                "title": "Ajouter un compte",
+                "description": "Veuillez saisir vos identifiants",
+                "data": {
+                    "username": "Email",
+                    "password": "Mot de passe",
+                    "includeTransactions": "Inclure la liste des transactions ?"
+                },
+                "data_description": {
+                    "username": "Email de connexion utilisé sur https://www.myedenred.fr/",
+                    "password": "Mot de passe de connexion utilisé sur https://www.myedenred.fr/",
+                    "includeTransactions": "Inclure la liste des transactions"
+                }
+            }
+        },
+        "error": {
+            "auth": "Invalid credentials accessing https://www.myedenred.pt/ portal."
+        },
+        "abort": {
+            "single_instance_allowed": "Only a single configuration of myEdenred is allowed.",
+            "already_configured": "Integration is already configured"
+        }
+    }
+}
